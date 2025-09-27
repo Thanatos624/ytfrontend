@@ -1,23 +1,29 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# Dependencies
+# Same as the backend, this folder is huge and regenerated with `npm install`.
 /node_modules
-/.pnp
-.pnp.js
 
-# testing
-/coverage
-
-# production
+# Build output
+# This folder is created when you build your app for production. It contains
+# optimized, minified code that is not meant to be edited or versioned.
 /build
 
-# misc
-.DS_Store
+# Environment Variables
+# Just like the backend, protect your local environment variables.
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# Logs and Reports
+# Error logs and test coverage reports don't belong in the repo.
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/coverage
+
+# Operating System Files
+.DS_Store
+Thumbs.db

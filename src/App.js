@@ -6,7 +6,7 @@ import VideoPlayer from './VideoPlayer';
 import './App.css'; // You can add some basic styles here
 
 // IMPORTANT: Replace with your deployed backend URL
-const API_URL = 'http://localhost:5000/api'; 
+const API_URL = process.env.REACT_APP_API_URL;
 
 function App() {
     const [videos, setVideos] = useState([]);

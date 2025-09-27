@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 // IMPORTANT: In a real app, you'd get this from your .env file
-const API_URL = 'http://localhost:5000/api'; // Use your deployed backend URL here later
+const API_URL = process.env.REACT_APP_API_URL;// Use your deployed backend URL here later
 
 function UploadForm({ onUploadSuccess }) {
     const [file, setFile] = useState(null);
